@@ -9,11 +9,13 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://kit.fontawesome.com/7bfc8cee80.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <title>ISS (International School System)</title>
     <link rel="shortcut icon" type="image" href="logo.jpg">
 </head>
 
 <body>
+    <div id="cursor"></div>
     <nav>
         <div class="logo">
             <img src="logo.jpg" alt="">
@@ -172,6 +174,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="projecteducation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        let tl = gsap.timeline();
+        tl.from('.section-1 .left-text', { scale: 0.6, duration: .5, ease: Expo.EaseOut });
+    </script>
 </body>
 
 </html>
