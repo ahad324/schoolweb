@@ -313,6 +313,9 @@ button:hover {
 }
 
 @media (max-width:780px) {
+    #cursor{
+        display:none;
+    }
     .menu-btn i {
         display: block;
         position: relative;
